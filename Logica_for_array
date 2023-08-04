@@ -1,0 +1,23 @@
+nomes = [];
+let nameInputValue = document.getElementById("name_input").value;
+        nomes.push({nome:nameInputValue});
+        console.log(nomes);
+        parar = false;
+        for(var c=0;c<nomes.length;c++){
+          console.log(c);
+          for(var d=c+1;d<nomes.length;d++){
+            console.log(d);
+            if (nomes[c].nome==nomes[d].nome){
+              window.alert("Nomes duplicados não são permitidos!!!")
+              console.log("Nomes duplicados não serão permitidos! " + nomes[c].nome);
+              parar=true;
+              break;
+            }
+          }
+        }
+        if(!parar){//restante do código}
+
+--> Explicação objetivo do código: O objetivo deste algoritmo é receber nomes, adicionar em uma lista e antes dessa etapa, verificar se os nomes apresentados não são duplicados.
+--> Explicação da lógica: o uso dos looping(s) for são para verificar o nosso array nomes. No primeiro, estamos iniciando nosso índice c que ficará com a primeira posição do array. 
+Dentro do primeiro looping, declaramos outro for e inicíamos o segundo índice d, que terá valor inicial de 1. A explicação para isso é: queremos verificar cada posição de nossos 
+nomes adicionados no array, para verificar as duplicatas. Se o nosso c e todas as posições do d estão "limpas", continua. Caso não, ele dá um break e não é executado o resto do código.
