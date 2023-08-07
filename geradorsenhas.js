@@ -20,3 +20,5 @@ for(let c=0;c<5;c++){
 }
 let combinar =  aleatorio_simbolos + aleatorio_letras + aleatorio_numero;
 console.log(combinar)
+
+--> 
