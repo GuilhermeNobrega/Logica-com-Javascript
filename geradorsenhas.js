@@ -21,4 +21,6 @@ for(let c=0;c<5;c++){
 let combinar =  aleatorio_simbolos + aleatorio_letras + aleatorio_numero;
 console.log(combinar)
 
---> 
+--> Objetivo do código: Um simples gerador de senhas aleatórias.
+--> Explicação algoritmo: Cada for irá realizar as seguintes etapas: 'Math.floor(Math.random()*letras.length);' nisto ele escolhe um valor aleatório dentro da faixa do tamanho da variável avaliada. 
+    '+= letras.charAt(indice_aleatorio);' Neste trecho de código pegaremos o primeiro valor aleatório escolhido anteriomente, isso realizando a cada interação do for.
