@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess who back?</title>
+</head>
+<body>
+    <button>Clique aqui para inserir seu nome!</button>
+    <h1></h1>
+    <style>
+        body {
+          background-color:aquamarine;
+        }
+        
+        h1 {
+          color:rgb(52, 22, 160);
+        }
+        </style>
+    <script>
+        let botao = document.querySelector("button");
+        let h1 = document.querySelector("h1");
+        function setar_nome(){
+            let receber_nome = prompt("Digite seu nome, por favor!");
+            localStorage.setItem("name",receber_nome);
+            h1.textContent = ` Deu certo, ${receber_nome}`}
+
+            if(!localStorage.getItem("name")){
+                setar_nome();
+            }
+            else{
+                h1.textContent = `Calma aí que já já roda!`
+            }
+            botao.onclick = () =>{
+                setar_nome();
+            }
+    </script>
+</body>
+</html>
+
+
