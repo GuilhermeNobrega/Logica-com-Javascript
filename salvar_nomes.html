@@ -21,9 +21,14 @@
         let botao = document.querySelector("button");
         let h1 = document.querySelector("h1");
         function setar_nome(){
+            h1.textContent = `Calma aí que já já roda!`
             let receber_nome = prompt("Digite seu nome, por favor!");
             localStorage.setItem("name",receber_nome);
-            h1.textContent = ` Deu certo, ${receber_nome}`}
+            if(receber_nome==false){
+                window.alert("Insira um nome, para não ficar null..");
+            }
+            else{
+            h1.textContent = ` Deu certo, ${receber_nome}`}}
 
             if(!localStorage.getItem("name")){
                 setar_nome();
