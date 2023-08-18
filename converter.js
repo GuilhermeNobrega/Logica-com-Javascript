@@ -22,3 +22,12 @@ function conversao(){
     }
 }
 conversao();
+
+let frase_longa = `Assim que podemos por uma frase grande no javascript.
+Teste que irá rodar XD.`;
+console.log(frase_longa)
+
+let barra_n = "Olá, outra possibilidade de frase longa, porém essa é com um\npara separar nossas linhas!!";
+console.log(barra_n)
+console.log(barra_n.length)
+console.log(barra_n.indexOf('Olá')) // indexOf serve para achar a posição de valores que você passar como parâmetro
