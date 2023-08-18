@@ -31,3 +31,5 @@ let barra_n = "Olá, outra possibilidade de frase longa, porém essa é com um\n
 console.log(barra_n)
 console.log(barra_n.length)
 console.log(barra_n.indexOf('Olá')) // indexOf serve para achar a posição de valores que você passar como parâmetro
+console.log(barra_n.toLowerCase());
+console.log(barra_n.toUpperCase());
