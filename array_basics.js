@@ -38,3 +38,11 @@ const myFish = ["angel", "clown", "mandarin", "sturgeon"];
 const removed = myFish.splice(1, 1, "drum");
 
 console.log(myFish);
+for(const leitura of myFish){
+    console.log(myFish);
+}
+
+const data = 'ola,oi,tchau,hi,hello,bye,goodbye';
+const corte = data.split(',');
+console.log(corte);
+console.log(corte[0]);
