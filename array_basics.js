@@ -20,3 +20,21 @@ for(let c = 0;c<duplicados.length;c++){
 }
 console.log("Array sem valores duplicados:" + duplicados);
 
+/*
+splice(start)
+splice(start, deleteCount)
+splice(start, deleteCount, item0)
+splice(start, deleteCount, item0, item1)
+splice(start, deleteCount, item0, item1,)*/
+
+salvar = ['jan','fev','march','april','may'];
+let descobrir = salvar.indexOf('march');
+if(descobrir!=-1){
+    salvar.splice(descobrir,2);
+}
+console.log(salvar);
+
+const myFish = ["angel", "clown", "mandarin", "sturgeon"];
+const removed = myFish.splice(1, 1, "drum");
+
+console.log(myFish);
