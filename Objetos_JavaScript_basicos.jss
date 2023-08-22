@@ -38,3 +38,19 @@ const pessoa = {
 console.log(`The name is ${pessoa.nick.first} ${pessoa.nick.second}`)
 console.log(pessoa.nick.first);
 console.log(pessoa.nick.second);
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+const teste = {
+    name:["777","Joji"],
+    year: 2020,
+};
+function leitura_dados(valores){
+    console.log(teste[valores]);
+    console.log(`The music ${teste.name[0]} by ${teste.name[1]} was raised in ${teste.year}`);
+    // result: The music 777 by Joji was raised in 2020
+
+}
+leitura_dados("name");
+leitura_dados("year");
+
+//Se usassemos os: "console.log(`The music ${this teste.name[0]} by ${this.name[1]} was raised in ${this.year}`);" O resultado seria == "The music undefined by undefined was raised in undefined"
