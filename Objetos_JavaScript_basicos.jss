@@ -54,3 +54,6 @@ leitura_dados("name");
 leitura_dados("year");
 
 //Se usassemos os: "console.log(`The music ${this teste.name[0]} by ${this.name[1]} was raised in ${this.year}`);" O resultado seria == "The music undefined by undefined was raised in undefined"
+
+//O uso do this é mais comum quando você está dentro do contexto de um objeto (métodos de objeto) e deseja se referir às propriedades daquele objeto específico. Quando você está lidando com variáveis globais 
+ou variáveis dentro do escopo de uma função, o this geralmente não é necessário.
