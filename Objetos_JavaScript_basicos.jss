@@ -27,3 +27,14 @@ testar (){
 }
 person.information()
 person.testar()
+
+const pessoa = {
+    nick:{
+        first: 'Gui',
+        second: 'gomes',
+    },
+
+};
+console.log(`The name is ${pessoa.nick.first} ${pessoa.nick.second}`)
+console.log(pessoa.nick.first);
+console.log(pessoa.nick.second);
