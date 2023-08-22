@@ -10,3 +10,5 @@ testar: function(){
 }
 person.information()
 person.testar()
+
+//o uso do this aqui é fundamental para referenciar as propriedades do objeto no qual os métodos estão definidos, permitindo que os métodos acessem e manipulem as informações corretas associadas a esse objeto específico.
